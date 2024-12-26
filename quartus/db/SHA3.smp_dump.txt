@@ -1,0 +1,10 @@
+
+State Machine - |SHA3|control_unit:CU|current_state
+Name current_state.DONE current_state.EX_BLOCK current_state.EX_FIRST_BLOCK current_state.WAIT_DATA current_state.FULL_DATA current_state.START current_state.INIT 
+current_state.INIT 0 0 0 0 0 0 0 
+current_state.START 0 0 0 0 0 1 1 
+current_state.FULL_DATA 0 0 0 0 1 0 1 
+current_state.WAIT_DATA 0 0 0 1 0 0 1 
+current_state.EX_FIRST_BLOCK 0 0 1 0 0 0 1 
+current_state.EX_BLOCK 0 1 0 0 0 0 1 
+current_state.DONE 1 0 0 0 0 0 1 

@@ -1,0 +1,166 @@
+E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/transformation_round.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/transformation_round.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package transformation_round_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module transformation_round
+-- Compiling module transformation_round_tb
+
+Top level modules:
+	transformation_round_tb
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/array_to_string.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/array_to_string.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package array_to_string_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module array_to_string
+
+Top level modules:
+	array_to_string
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/counter.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/counter.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/buffer_in.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/buffer_in.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module buffer_in
+-- Compiling module buffer_in_test
+
+Top level modules:
+	buffer_in_test
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/sm_pi.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/sm_pi.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package sm_pi_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module sm_pi
+
+Top level modules:
+	sm_pi
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/sm_rho.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/sm_rho.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package sm_rho_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module sm_rho
+
+Top level modules:
+	sm_rho
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/round_constant.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/round_constant.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package round_constant_sv_unit
+
+Top level modules:
+	--none--
+
+} {} {}} E:/Lecture/Project_2/SHA3/model_sim_example/top_module_tb.sv {1 {vlog -work work -vopt -sv -stats=none {E:\Lecture\Project_2\SHA3\model_sim_example\top_module_tb.sv}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module top_module_tb
+
+Top level modules:
+	top_module_tb
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/sm_chi.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/sm_chi.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package sm_chi_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module sm_chi
+-- Compiling module sm_theta_chi_tb
+
+Top level modules:
+	sm_theta_chi_tb
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/sm_theta.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/sm_theta.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package sm_theta_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module sm_theta
+
+Top level modules:
+	sm_theta
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/VSX_module.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/VSX_module.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module VSX_module
+
+Top level modules:
+	VSX_module
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/step_mapping.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/step_mapping.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package step_mapping_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module step_mapping
+-- Compiling module step_mapping_tb
+
+Top level modules:
+	step_mapping_tb
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/top_module.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/top_module.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package top_module_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module top_module
+
+Top level modules:
+	top_module
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/control.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/control.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/keccak_pkg.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/keccak_pkg.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package keccak_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/string_to_array.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/string_to_array.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package string_to_array_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module string_to_array
+-- Compiling module string_to_array_tb
+
+Top level modules:
+	string_to_array_tb
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/trunc.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/trunc.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module trunc
+
+Top level modules:
+	trunc
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/sm_iota.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/sm_iota.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package sm_iota_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module sm_iota
+
+Top level modules:
+	sm_iota
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/mux2to1_1600bit.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/mux2to1_1600bit.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module mux2to1_1600bit
+
+Top level modules:
+	mux2to1_1600bit
+
+} {} {}} E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/register.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/keccak-hw-prj-main/keccak-hw-prj-main/TienSHA/register.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}}
