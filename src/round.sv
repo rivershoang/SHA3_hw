@@ -7,7 +7,6 @@ module round (
    input  logic         reset_n    ,
 	input  state         A_in       ,
    input  logic [4:0]   rnd_count  ,
-
    output state         A_out      ,
    output logic         finish
 );
@@ -24,12 +23,12 @@ module round (
       .A_out   (step_out)     
    );
 
-   assign finish = (rnd_count == 24);
-   assign A_out = step_out_reg;
+   assign finish  = (rnd_count == 24);
+   assign A_out   = step_out_reg;
 
    always_ff @(posedge clk or negedge reset_n) begin 
       if (~reset_n) step_out_reg <= 0;
-      else step_out_reg <= step_out;
+      else step_out_reg          <= step_out;
    end
 
 endmodule 

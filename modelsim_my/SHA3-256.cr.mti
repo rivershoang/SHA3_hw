@@ -60,22 +60,21 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	pi
 
-} {} {}} E:/Lecture/Project_2/SHA3/tb/SHA3_tb.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/tb/SHA3_tb.sv
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-** Warning: E:/Lecture/Project_2/SHA3/tb/SHA3_tb.sv(1): (vlog-13233) Design unit "SHA3_tb_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
--- Compiling package SHA3_tb_sv_unit
--- Importing package keccak_pkg
--- Compiling module SHA3_tb
-
-Top level modules:
-	SHA3_tb
-
 } {} {}} E:/Lecture/Project_2/SHA3/src/serial_to_paralell_pad.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/serial_to_paralell_pad.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module serial_to_paralell_pad
 
 Top level modules:
 	serial_to_paralell_pad
+
+} {} {}} E:/Lecture/Project_2/SHA3/tb/SHA3_tb.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/tb/SHA3_tb.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package SHA3_tb_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module SHA3_tb
+
+Top level modules:
+	SHA3_tb
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/keccak_pkg.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/keccak_pkg.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -112,21 +111,14 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	serial_to_paralell_pad_tb
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/SHA3.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/SHA3.sv
+} {} {}} E:/Lecture/Project_2/SHA3/src/string_to_array.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/string_to_array.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling package SHA3_sv_unit
+-- Compiling package string_to_array_sv_unit
 -- Importing package keccak_pkg
--- Compiling module SHA3
+-- Compiling module string_to_array
 
 Top level modules:
-	SHA3
-
-} {} {}} E:/Lecture/Project_2/SHA3/src/round_counter.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/round_counter.sv
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module round_counter
-
-Top level modules:
-	round_counter
+	string_to_array
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/array_to_string.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/array_to_string.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -139,14 +131,21 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	array_to_string
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/string_to_array.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/string_to_array.sv
+} {} {}} E:/Lecture/Project_2/SHA3/src/round_counter.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/round_counter.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling package string_to_array_sv_unit
--- Importing package keccak_pkg
--- Compiling module string_to_array
+-- Compiling module round_counter
 
 Top level modules:
-	string_to_array
+	round_counter
+
+} {} {}} E:/Lecture/Project_2/SHA3/src/SHA3.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/SHA3.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package SHA3_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module SHA3
+
+Top level modules:
+	SHA3
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/round.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/round.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -166,17 +165,6 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	control_unit
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/rho.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/rho.sv
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-** Warning: E:/Lecture/Project_2/SHA3/src/rho.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
--- Compiling package rho_sv_unit
--- Importing package keccak_pkg
--- Compiling module rho
-** Warning: E:/Lecture/Project_2/SHA3/src/rho.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-
-Top level modules:
-	rho
-
 } {} {}} E:/Lecture/Project_2/SHA3/src/xor_state.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/xor_state.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module xor_state
@@ -190,6 +178,17 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
 Top level modules:
 	--none--
+
+} {} {}} E:/Lecture/Project_2/SHA3/src/rho.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/rho.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: E:/Lecture/Project_2/SHA3/src/rho.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package rho_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module rho
+** Warning: E:/Lecture/Project_2/SHA3/src/rho.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	rho
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/mux.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/mux.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020

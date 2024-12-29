@@ -1,11 +1,12 @@
 module control_unit (clk, rst_n, start, last, buff_full, first, finish, valid, nxt_block, en_vsx, en_counter, ready);
-	input		clk, rst_n;
-	input				start, 
+	input 	logic clk, 
+						rst_n;
+	input		logic	start, 
 						last, 
 						buff_full, 
 						first, 
 						finish;
-	output  logic	valid, 
+	output	logic	valid, 
 						nxt_block, 
 						en_vsx, 
 						en_counter, 
@@ -74,9 +75,9 @@ module control_unit (clk, rst_n, start, last, buff_full, first, finish, valid, n
 			ready 		= 0;
 		end
 		WAIT_DATA: begin
-			if (last && !first) 				next_state = EX_BLOCK;	
-			else if (last && first) 		next_state = EX_FIRST_BLOCK;
-			else 									next_state = WAIT_DATA;
+			if (last && !first)		next_state = EX_BLOCK;	
+			else if (last && first) next_state = EX_FIRST_BLOCK;
+			else 							next_state = WAIT_DATA;
 			valid 		= 1; 
 			nxt_block 	= 0; 
 			en_vsx 		= 1; 

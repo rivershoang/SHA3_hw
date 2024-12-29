@@ -124,8 +124,8 @@ module serial_to_paralell_pad (
                counter        = 0;
                first_block    = first_block + 1;
             end
-            if (first_block == 1) is_first_data <= 1; 
-            else is_first_data <= 0;
+            if (first_block == 1)   is_first_data <= 1; 
+            else                    is_first_data <= 0;
          end
       end
    end
@@ -148,10 +148,6 @@ module serial_to_paralell_pad (
       data_out[959:896]   =	{mem[119], mem[118], mem[117], mem[116], mem[115], mem[114], mem[113], mem[112]}; 
       data_out[1023:960]  =	{mem[127], mem[126], mem[125], mem[124], mem[123], mem[122], mem[121], mem[120]}; 
       data_out[1087:1024] =	{mem[135], mem[134], mem[133], mem[132], mem[131], mem[130], mem[129], mem[128]}; 
-      //data_out[1151:1088] =	{mem[143], mem[142], mem[141], mem[140], mem[139], mem[138], mem[137], mem[136]}; 
-      //data_out[1215:1152] =	{mem[151], mem[150], mem[149], mem[148], mem[147], mem[146], mem[145], mem[144]}; 
-      //data_out[1279:1216] =	{mem[159], mem[158], mem[157], mem[156], mem[155], mem[154], mem[153], mem[152]}; 
-      //data_out[1343:1280] =  	{mem[167], mem[166], mem[165], mem[164], mem[163], mem[162], mem[161], mem[160]}; 
    end
     
 endmodule

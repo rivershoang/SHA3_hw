@@ -3,9 +3,9 @@ import keccak_pkg::state;
 import keccak_pkg::N;
 
 module step_mapping (
-	input  state A_in    ,
-   input  logic [ 4:0] rc_num ,
-	output state A_out 
+	input  state         A_in  ,
+   input  logic [4:0]   rc_num,
+	output state         A_out 
 );
 
    state A_theta ;

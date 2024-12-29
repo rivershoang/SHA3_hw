@@ -1,3 +1,6 @@
+`ifndef KECCAK_PKG
+`define KECCAK_PKG
+
 package keccak_pkg;
 	parameter	NUM_PLANE = 5;
 	parameter	NUM_SHEET = 5;
@@ -12,5 +15,8 @@ package keccak_pkg;
 	//function ABS 
 	function int ABS (int numberIn);
         	ABS = (numberIn < 0) ? -numberIn : numberIn;
-    	endfunction
+   endfunction
+	
 endpackage
+
+`endif
