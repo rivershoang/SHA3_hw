@@ -8,77 +8,76 @@ module FIFO #(
    input  logic               clk      , 
    input  logic               reset_n  ,
    
-   input  logic [WIDTH-1:0]   fifo_in  ,
-   input  logic               fifo_wr  ,
-   input  logic               fifo_rd  ,
+   input  logic [WIDTH-1:0]   data_in  ,
+   input  logic               wr_en    ,
+   input  logic               rd_en    , 
 
-   output logic [WIDTH-1:0]   fifo_out ,
-   output logic               fifo_full,
-   output logic               fifo_empty
+   output logic [WIDTH-1:0]   data_out ,
+   output logic               is_full  ,
+   output logic               is_empty ,
+   output logic [ADDR_W  :0]  fifo_len ,   // current length
+   output logic               last_read
 );
 
-   logic [WIDTH-1:0]    mem_array [DEPTH-1:0];
-   integer              wr_point;
-   integer              rd_point;
-   integer              count_data;
+   logic [WIDTH-1:0] mem_fifo [0:DEPTH-1];
+   logic [ADDR_W-1:0] wr_point; // pointer write (4bit)
+   logic [ADDR_W-1:0] rd_point; // pointer read (4bit)
+   assign rd_point = wr_point - fifo_len[ADDR_W-1:0];
 
-
-   assign fifo_full = (count_data == 16);
-   assign fifo_empty = (count_data == 0);
-
-   always_ff @(posedge clk or negedge reset_n) begin 
-      if (~reset_n) begin 
-         count_data <= 0;
-      end else if ((~fifo_full && fifo_wr) && (~fifo_empty && fifo_rd)) begin 
-         count_data <= count_data;
-      end else if (~fifo_full && fifo_wr) begin 
-         count_data <= count_data + 1;
-      end else if (~fifo_empty && fifo_rd) begin 
-         count_data <= count_data - 1;
-      end else begin 
-         count_data <= count_data;
-      end 
-   end
-
-   // Read data
-   always_ff @(posedge clk or negedge reset_n) begin 
-      if (~reset_n) begin 
-         fifo_out <= 0;
-      end else begin 
-         if (fifo_rd && ~fifo_empty) begin 
-            fifo_out <= mem_array[rd_point];
-         end else begin 
-            fifo_out <= fifo_out;
-         end
-      end
-   end
+   logic wr_enable; 
+   logic rd_enable;
+   
+   assign wr_enable = wr_en && ~is_full;
+   assign rd_enable = rd_en && ~is_empty;
 
    // Write data
    always_ff @(posedge clk) begin 
-      if (fifo_wr && ~fifo_full) begin 
-         mem_array[wr_point] <= fifo_in;
-      end else begin
-         mem_array[wr_point] <= mem_array[wr_point];
+      if (wr_enable) begin 
+         mem_fifo[wr_point] <= data_in;
       end
    end
 
-   // Pointer
+   // update pointer write
    always_ff @(posedge clk or negedge reset_n) begin 
       if (~reset_n) begin 
          wr_point <= 0;
-         rd_point <= 0;
-      end else begin 
-         if (~fifo_full && fifo_wr) begin 
-            wr_point <= wr_point + 1;
-         end else begin 
-            wr_point <= wr_point;
-         end
-         if (~fifo_empty && fifo_rd) begin 
-            rd_point <= rd_point + 1;
-         end else begin 
-            rd_point <= rd_point;
-         end
+      end else if (wr_enable) begin 
+         wr_point <= wr_point + 1;
       end
    end
 
+   // update fifo length
+   always_ff @(posedge clk or negedge reset_n) begin 
+      if (~reset_n) begin 
+         fifo_len <= 0;
+      end else begin 
+         case ({rd_enable,wr_enable})
+            2'b01: fifo_len <= fifo_len + 1;
+            2'b10: fifo_len <= fifo_len - 1;
+            default: fifo_len <= fifo_len;
+         endcase 
+      end
+   end
+
+   // Read data
+   always_ff @(posedge clk or negedge reset_n) begin
+      if (~reset_n) begin
+         data_out <= 0;
+      end else if (rd_enable) begin
+         data_out <= mem_fifo[rd_point];
+      end
+   end
+
+   // Signal when the last data is read
+   always_ff @(posedge clk or negedge reset_n) begin
+      if (~reset_n) begin
+         last_read <= 0;
+      end else begin
+         last_read <= rd_enable && (fifo_len == 1);
+      end
+   end
+
+   assign is_full = (fifo_len == DEPTH); // full when depth = 16
+   assign is_empty = (fifo_len == 0); // empty when depth = 0
+   
 endmodule  

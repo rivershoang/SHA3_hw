@@ -1,4 +1,5 @@
 -sv
+-timescale 1ns/1ns
 
 ./../src/keccak_pkg.sv
 ./../src/array_to_string.sv
@@ -18,7 +19,9 @@
 ./../src/string_to_array.sv
 ./../src/theta.sv
 ./../src/xor_state.sv
+./../src/FIFO_result.sv
+./../src/top.sv
 
-./../tb/SHA3_tb.sv
+./../tb/top_tb.sv
 
-+xmtop+tbench
++xmtop+top_tb

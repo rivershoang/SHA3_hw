@@ -1,4 +1,4 @@
-    module FIFO_tb;
+module FIFO_tb;
 
     // Parameters
     parameter WIDTH = 64;
@@ -8,104 +8,65 @@
     // Signals
     logic clk;
     logic reset_n;
-    logic [WIDTH-1:0] fifo_in;
-    logic fifo_wr;
-    logic fifo_rd;
-    logic [WIDTH-1:0] fifo_out;
-    logic fifo_full;
-    logic fifo_empty;
+    logic [WIDTH-1:0] data_in;
+    logic wr_en;
+    logic rd_en;
+    logic [WIDTH-1:0] data_out;
+    logic [ADDR_W:0] fifo_len;
+    logic is_full;
+    logic is_empty;
+    logic last_read;
 
     // DUT Instantiation
     FIFO #(
         .WIDTH(WIDTH),
         .DEPTH(DEPTH),
         .ADDR_W(ADDR_W)
-    ) uut (
+    ) dut (
         .clk(clk),
         .reset_n(reset_n),
-        .fifo_in(fifo_in),
-        .fifo_wr(fifo_wr),
-        .fifo_rd(fifo_rd),
-        .fifo_out(fifo_out),
-        .fifo_full(fifo_full),
-        .fifo_empty(fifo_empty)
+        .data_in(data_in),
+        .wr_en(wr_en),
+        .rd_en(rd_en),
+        .data_out(data_out),
+        .is_full(is_full),
+        .is_empty(is_empty),
+        .fifo_len(fifo_len),
+        .last_read(last_read)
     );
 
     // Clock Generation
     initial begin
     clk = 0;
-    forever #5 clk = ~clk; // 10ns clock period
+    forever #1 clk = ~clk; // 10ns clock period
     end
 
-    // Test Procedure
-    initial begin
-    // Initialize inputs
-    reset_n = 0;
-    fifo_wr = 0;
-    fifo_rd = 0;
-    fifo_in = 0;
+    initial begin 
+        reset_n = 0;
+        data_in = 0;
+        wr_en = 0;
+        rd_en = 0;
 
-    // Apply reset
-    #10 reset_n = 1;
-    $display("Reset applied.");
-
-    // Test Case 1: Write data into FIFO until full
-    $display("Writing data into FIFO...");
-    for (int i = 0; i < DEPTH; i++) begin
         @(posedge clk);
-        if (!fifo_full) begin
-        fifo_in = $random;
-        fifo_wr = 1;
+        reset_n = 1;
+            // Test: Write data to FIFO
+        repeat (DEPTH) begin
+            @(posedge clk);
+            wr_en = 1;
+            data_in = $random;
+            @(posedge clk);
+            wr_en = 0;
         end
-    end
-    @(posedge clk);
-    fifo_wr = 0;
-    $display("FIFO Full: %b", fifo_full);
 
-    // Test Case 2: Read data from FIFO until empty
-    $display("Reading data from FIFO...");
-    for (int i = 0; i < DEPTH; i++) begin
-        @(posedge clk);
-        if (!fifo_empty) begin
-        fifo_rd = 1;
+            // Test: Read data from FIFO
+        repeat (DEPTH) begin
+            @(posedge clk);
+            rd_en = 1;
+            @(posedge clk);
+            rd_en = 0;
         end
-    end
-    @(posedge clk);
-    fifo_rd = 0;
-    $display("FIFO Empty: %b", fifo_empty);
 
-    // Test Case 3: Simultaneous Read and Write
-    $display("Testing simultaneous read/write...");
-    for (int i = 0; i < DEPTH; i++) begin
-        @(posedge clk);
-        fifo_in = $random;
-        fifo_wr = 1;
-        fifo_rd = 1;
-    end
-    @(posedge clk);
-    fifo_wr = 0;
-    fifo_rd = 0;
-
-    // Test Case 4: Reset during operation
-    $display("Applying reset during operation...");
-    @(posedge clk);
-    fifo_wr = 1;
-    fifo_in = $random;
-    @(posedge clk);
-    reset_n = 0; // Apply reset
-    @(posedge clk);
-    reset_n = 1; // Release reset
-    fifo_wr = 0;
-
-    if (fifo_empty && !fifo_full) begin
-        $display("Reset successful.");
-    end else begin
-        $display("Reset failed.");
+        $stop;
     end
 
-    // End of test
-    $display("Testbench complete.");
-    $stop;
-    end
-
-    endmodule
+endmodule 

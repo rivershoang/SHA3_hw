@@ -1,3 +1,4 @@
+`include "../src/keccak_pkg.sv"
 import keccak_pkg::plane;
 import keccak_pkg::state;
 import keccak_pkg::N;

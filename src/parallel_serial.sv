@@ -31,17 +31,19 @@ module parallel_serial (
 	end
 
 	always_ff @(posedge clk or negedge reset_n) begin
-		if (!reset_n) begin
+		if (~reset_n) begin
 			S_out_serial 	<= 0; 
       	finish_hash 	<= 0; 
       	i 					<= 0; 
 		end else begin
 			if (ready)
 				if (i < 4) begin
-					S_out_serial <= {array_out[i*8], array_out[i*8+1], array_out[i*8+2], array_out[i*8+3], array_out[i*8+4], array_out[i*8+5], array_out[i*8+6], array_out[i*8+7]}; // 64 bit
-               //S_out_serial <= {array_out[i*4], array_out[i*4+1], array_out[i*4+2], array_out[i*4+3]}; // 64 bit
+					S_out_serial <= {array_out[i*8], array_out[i*8+1], array_out[i*8+2], array_out[i*8+3], 
+											array_out[i*8+4], array_out[i*8+5], array_out[i*8+6], array_out[i*8+7]}; // 64 bit
                i = i + 1;
-				end else finish_hash <= 1;
+				end else begin 
+					finish_hash <= 1;
+				end
 			end
 	end
 

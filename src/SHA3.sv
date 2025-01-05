@@ -1,26 +1,29 @@
+`include "../src/keccak_pkg.sv"
 import keccak_pkg::plane;
 import keccak_pkg::state;
 import keccak_pkg::N;
 
-module SHA3(clk, rst_n, start, data_in, last_block, valid, finish_hash, data_out, ready);
-	input		               clk, rst_n;
-	input		               start;
-	input		      [63:0]   data_in;
-	input		               last_block;
-	output logic	         valid;
-	output logic	         finish_hash;
-	output logic	[63:0]   data_out;
-	output logic		ready;
+module SHA3(clk, rst_n, start, data_in, last_block, valid, finish_hash, data_out, ready,read_data_fifo);
+	input                clk, rst_n;
+	input                start;
+	input  logic [63:0]  data_in;
+	input                last_block;
+   output logic         read_data_fifo;
+	output logic         valid;
+	output logic         finish_hash;
+	output logic [63:0]  data_out;
+	output logic         ready;
 
-	logic		last_block, 
-            buff_full, 
-            first, 
-            nxt_block, 
-            en_vsx, 
-            en_counter, 
-            finish;
+	logic		         last_block, 
+                     buff_full, 
+                     first, 
+                     nxt_block, 
+                     en_vsx, 
+                     en_counter,
+                     finish;
 	logic		[1087:0] dt_o;
-	state		tr_out, tr_in;
+	state		         tr_out, 
+                     tr_in;
 	logic		[1599:0] init_state, 
                      data_to_sta, 
                      tr_out_string, 
@@ -28,23 +31,6 @@ module SHA3(clk, rst_n, start, data_in, last_block, valid, finish_hash, data_out
 	logic		[  4: 0] round_num;
 
 
-
-   // logic en_count,
-   //       next_block,
-   //       is_full,
-   //       is_xor,
-   //       first_data,
-   //       finish;
-
-   // logic [1087:0] data_out_tmp;
-   // logic [1599:0] state_xor,
-   //                string_out_xor,
-   //                data_sta,
-   //                string_out_rnd;
-
-   // state A_sta  ;
-   // state A_out_rnd;
-   // logic [4:0] rnd_count;
    
    serial_to_paralell_pad serial_to_paralell_pad_inst (
       .clk           (clk)       ,
@@ -106,7 +92,8 @@ module SHA3(clk, rst_n, start, data_in, last_block, valid, finish_hash, data_out
       .nxt_block  (nxt_block) ,
       .en_vsx     (en_vsx)    ,
       .en_counter (en_counter),
-      .ready      (ready)
+      .ready      (ready)     ,
+      .read_data_fifo (read_data_fifo)
    );
 
    array_to_string ATS (

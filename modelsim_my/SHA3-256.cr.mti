@@ -1,43 +1,54 @@
 E:/Lecture/Project_2/SHA3/src/chi.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/chi.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-** Warning: E:/Lecture/Project_2/SHA3/src/chi.sv(6): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package keccak_pkg
+** Warning: E:/Lecture/Project_2/SHA3/src/chi.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 -- Compiling package chi_sv_unit
 -- Importing package keccak_pkg
 -- Compiling module chi
-** Warning: E:/Lecture/Project_2/SHA3/src/chi.sv(6): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: E:/Lecture/Project_2/SHA3/src/chi.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 
 Top level modules:
 	chi
 
+} {} {}} E:/Lecture/Project_2/SHA3/src/syn_fifo.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/syn_fifo.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module syn_fifo
+
+Top level modules:
+	syn_fifo
+
 } {} {}} E:/Lecture/Project_2/SHA3/src/iota.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/iota.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-** Warning: E:/Lecture/Project_2/SHA3/src/iota.sv(6): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package keccak_pkg
+** Warning: E:/Lecture/Project_2/SHA3/src/iota.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 -- Compiling package iota_sv_unit
 -- Importing package keccak_pkg
 -- Compiling module iota
-** Warning: E:/Lecture/Project_2/SHA3/src/iota.sv(6): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: E:/Lecture/Project_2/SHA3/src/iota.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 
 Top level modules:
 	iota
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/theta.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/theta.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-** Warning: E:/Lecture/Project_2/SHA3/src/theta.sv(6): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package keccak_pkg
+** Warning: E:/Lecture/Project_2/SHA3/src/theta.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 -- Compiling package theta_sv_unit
 -- Importing package keccak_pkg
 -- Compiling module theta
-** Warning: E:/Lecture/Project_2/SHA3/src/theta.sv(6): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: E:/Lecture/Project_2/SHA3/src/theta.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 
 Top level modules:
 	theta
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/step_mapping.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/step_mapping.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-** Warning: E:/Lecture/Project_2/SHA3/src/step_mapping.sv(6): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package keccak_pkg
+** Warning: E:/Lecture/Project_2/SHA3/src/step_mapping.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 -- Compiling package step_mapping_sv_unit
 -- Importing package keccak_pkg
 -- Compiling module step_mapping
-** Warning: E:/Lecture/Project_2/SHA3/src/step_mapping.sv(6): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: E:/Lecture/Project_2/SHA3/src/step_mapping.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 
 Top level modules:
 	step_mapping
@@ -49,16 +60,31 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	--none--
 
+} {} {}} E:/Lecture/Project_2/SHA3/tb/tb_syn_fifo.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/tb/tb_syn_fifo.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module tb_syn_fifo
+
+Top level modules:
+	tb_syn_fifo
+
 } {} {}} E:/Lecture/Project_2/SHA3/src/pi.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/pi.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-** Warning: E:/Lecture/Project_2/SHA3/src/pi.sv(6): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package keccak_pkg
+** Warning: E:/Lecture/Project_2/SHA3/src/pi.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 -- Compiling package pi_sv_unit
 -- Importing package keccak_pkg
 -- Compiling module pi
-** Warning: E:/Lecture/Project_2/SHA3/src/pi.sv(6): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: E:/Lecture/Project_2/SHA3/src/pi.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 
 Top level modules:
 	pi
+
+} {} {}} E:/Lecture/Project_2/SHA3/src/FIFO_result.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/FIFO_result.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module FIFO_result
+
+Top level modules:
+	FIFO_result
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/serial_to_paralell_pad.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/serial_to_paralell_pad.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -111,25 +137,22 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	serial_to_paralell_pad_tb
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/string_to_array.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/string_to_array.sv
+} {} {}} E:/Lecture/Project_2/SHA3/tb/top_tb.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/tb/top_tb.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling package string_to_array_sv_unit
--- Importing package keccak_pkg
--- Compiling module string_to_array
+-- Compiling module top_tb
 
 Top level modules:
-	string_to_array
+	top_tb
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/array_to_string.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/array_to_string.sv
+} {} {}} E:/Lecture/Project_2/SHA3/src/SHA3.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/SHA3.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-** Warning: E:/Lecture/Project_2/SHA3/src/array_to_string.sv(6): (vlog-13314) Defaulting port 'A' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
--- Compiling package array_to_string_sv_unit
+-- Compiling package keccak_pkg
+-- Compiling package SHA3_sv_unit
 -- Importing package keccak_pkg
--- Compiling module array_to_string
-** Warning: E:/Lecture/Project_2/SHA3/src/array_to_string.sv(6): (vlog-13314) Defaulting port 'A' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module SHA3
 
 Top level modules:
-	array_to_string
+	SHA3
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/round_counter.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/round_counter.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -138,25 +161,34 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	round_counter
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/SHA3.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/SHA3.sv
+} {} {}} E:/Lecture/Project_2/SHA3/src/array_to_string.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/array_to_string.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling package SHA3_sv_unit
+-- Compiling package keccak_pkg
+** Warning: E:/Lecture/Project_2/SHA3/src/array_to_string.sv(7): (vlog-13314) Defaulting port 'A' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package array_to_string_sv_unit
 -- Importing package keccak_pkg
--- Compiling module SHA3
+-- Compiling module array_to_string
+** Warning: E:/Lecture/Project_2/SHA3/src/array_to_string.sv(7): (vlog-13314) Defaulting port 'A' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 
 Top level modules:
-	SHA3
+	array_to_string
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/round.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/round.sv
+} {} {}} E:/Lecture/Project_2/SHA3/src/string_to_array.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/string_to_array.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-** Warning: E:/Lecture/Project_2/SHA3/src/round.sv(8): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
--- Compiling package round_sv_unit
+-- Compiling package keccak_pkg
+-- Compiling package string_to_array_sv_unit
 -- Importing package keccak_pkg
--- Compiling module round
-** Warning: E:/Lecture/Project_2/SHA3/src/round.sv(8): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module string_to_array
 
 Top level modules:
-	round
+	string_to_array
+
+} {} {}} E:/Lecture/Project_2/SHA3/tb/FIFO_tb.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/tb/FIFO_tb.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module FIFO_tb
+
+Top level modules:
+	FIFO_tb
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/control_unit.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/control_unit.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -165,6 +197,30 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	control_unit
 
+} {} {}} E:/Lecture/Project_2/SHA3/src/round.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/round.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package keccak_pkg
+** Warning: E:/Lecture/Project_2/SHA3/src/round.sv(9): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package round_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module round
+** Warning: E:/Lecture/Project_2/SHA3/src/round.sv(9): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	round
+
+} {} {}} E:/Lecture/Project_2/SHA3/src/rho.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/rho.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package keccak_pkg
+** Warning: E:/Lecture/Project_2/SHA3/src/rho.sv(8): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package rho_sv_unit
+-- Importing package keccak_pkg
+-- Compiling module rho
+** Warning: E:/Lecture/Project_2/SHA3/src/rho.sv(8): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	rho
+
 } {} {}} E:/Lecture/Project_2/SHA3/src/xor_state.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/xor_state.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module xor_state
@@ -172,30 +228,19 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	xor_state
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/round_constant.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/round_constant.sv
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling package round_constant_sv_unit
-
-Top level modules:
-	--none--
-
-} {} {}} E:/Lecture/Project_2/SHA3/src/rho.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/rho.sv
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-** Warning: E:/Lecture/Project_2/SHA3/src/rho.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
--- Compiling package rho_sv_unit
--- Importing package keccak_pkg
--- Compiling module rho
-** Warning: E:/Lecture/Project_2/SHA3/src/rho.sv(7): (vlog-13314) Defaulting port 'A_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-
-Top level modules:
-	rho
-
 } {} {}} E:/Lecture/Project_2/SHA3/src/mux.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/mux.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module mux
 
 Top level modules:
 	mux
+
+} {} {}} E:/Lecture/Project_2/SHA3/src/top.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/top.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module top
+
+Top level modules:
+	top
 
 } {} {}} E:/Lecture/Project_2/SHA3/tb/round_tb.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/tb/round_tb.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020

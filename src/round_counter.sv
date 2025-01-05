@@ -15,10 +15,5 @@ module round_counter (
             end
         end
     end
-   // always_ff @(posedge clk or negedge reset_n) begin 
-   //    if (~reset_n)           round <= 0;
-   //    else if (round == 24)   round <= 0;
-   //    else round <=           round + 1;
-   // end
-
+    
 endmodule
