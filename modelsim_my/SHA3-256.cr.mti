@@ -109,12 +109,12 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	--none--
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/parallel_serial.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/parallel_serial.sv
+} {} {}} E:/Lecture/Project_2/SHA3/src/FIFO.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/FIFO.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module parallel_serial
+-- Compiling module FIFO
 
 Top level modules:
-	parallel_serial
+	FIFO
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/cache.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/cache.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -123,12 +123,12 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	cache
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/FIFO.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/FIFO.sv
+} {} {}} E:/Lecture/Project_2/SHA3/src/parallel_serial.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/parallel_serial.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module FIFO
+-- Compiling module parallel_serial
 
 Top level modules:
-	FIFO
+	parallel_serial
 
 } {} {}} E:/Lecture/Project_2/SHA3/tb/serial_to_paralell_pad_tb.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/tb/serial_to_paralell_pad_tb.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -144,22 +144,22 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	top_tb
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/SHA3.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/SHA3.sv
+} {} {}} E:/Lecture/Project_2/SHA3/tb/FIFO_tb.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/tb/FIFO_tb.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module FIFO_tb
+
+Top level modules:
+	FIFO_tb
+
+} {} {}} E:/Lecture/Project_2/SHA3/src/string_to_array.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/string_to_array.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling package keccak_pkg
--- Compiling package SHA3_sv_unit
+-- Compiling package string_to_array_sv_unit
 -- Importing package keccak_pkg
--- Compiling module SHA3
+-- Compiling module string_to_array
 
 Top level modules:
-	SHA3
-
-} {} {}} E:/Lecture/Project_2/SHA3/src/round_counter.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/round_counter.sv
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module round_counter
-
-Top level modules:
-	round_counter
+	string_to_array
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/array_to_string.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/array_to_string.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -173,29 +173,22 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	array_to_string
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/string_to_array.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/string_to_array.sv
+} {} {}} E:/Lecture/Project_2/SHA3/src/round_counter.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/round_counter.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module round_counter
+
+Top level modules:
+	round_counter
+
+} {} {}} E:/Lecture/Project_2/SHA3/src/SHA3.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/SHA3.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling package keccak_pkg
--- Compiling package string_to_array_sv_unit
+-- Compiling package SHA3_sv_unit
 -- Importing package keccak_pkg
--- Compiling module string_to_array
+-- Compiling module SHA3
 
 Top level modules:
-	string_to_array
-
-} {} {}} E:/Lecture/Project_2/SHA3/tb/FIFO_tb.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/tb/FIFO_tb.sv
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module FIFO_tb
-
-Top level modules:
-	FIFO_tb
-
-} {} {}} E:/Lecture/Project_2/SHA3/src/control_unit.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/control_unit.sv
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module control_unit
-
-Top level modules:
-	control_unit
+	SHA3
 
 } {} {}} E:/Lecture/Project_2/SHA3/src/round.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/round.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -209,6 +202,20 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	round
 
+} {} {}} E:/Lecture/Project_2/SHA3/src/control_unit.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/control_unit.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module control_unit
+
+Top level modules:
+	control_unit
+
+} {} {}} E:/Lecture/Project_2/SHA3/src/xor_state.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/xor_state.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module xor_state
+
+Top level modules:
+	xor_state
+
 } {} {}} E:/Lecture/Project_2/SHA3/src/rho.sv {2 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/rho.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling package keccak_pkg
@@ -221,26 +228,12 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	rho
 
-} {} {}} E:/Lecture/Project_2/SHA3/src/xor_state.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/xor_state.sv
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module xor_state
-
-Top level modules:
-	xor_state
-
 } {} {}} E:/Lecture/Project_2/SHA3/src/mux.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/mux.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module mux
 
 Top level modules:
 	mux
-
-} {} {}} E:/Lecture/Project_2/SHA3/src/top.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/top.sv
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module top
-
-Top level modules:
-	top
 
 } {} {}} E:/Lecture/Project_2/SHA3/tb/round_tb.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/tb/round_tb.sv
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -250,5 +243,12 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
 Top level modules:
 	round_tb
+
+} {} {}} E:/Lecture/Project_2/SHA3/src/top.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/Project_2/SHA3/src/top.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module top
+
+Top level modules:
+	top
 
 } {} {}}
